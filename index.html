@@ -17,45 +17,13 @@
   <link rel="stylesheet" href="style.css">
   <title>Jake The Dog Sandwich Grabber</title>
 </head>
-<style>
-  body.debug .container,
-  body.debug .container-fluid {
-    outline: 2px double blue;
-    outline-offset: -2px;
-  }
 
-  body.debug .row {
-    outline: 2px dashed red;
-    outline-offset: -2px;
-  }
+<body>
 
-  body.debug [class*="col-"] {
-    outline: 2px dotted forestgreen;
-    outline-offset: -3px;
-  }
-</style>
-
-<body class="debug">
-  <header class="container">
-
-  </header>
   <main class="container-fluid">
-    <!-- ANCHOR jake the dog  -->
-    <div class="row">
-      <div class="col-3">
-        <img src="Burger.png" alt="Burger">
-        <div id='Sandis'>
-          <h1 class="text-light">0</h1>
-        </div>
-        <div class="col-12 d-flex justify-content-center" id="Jake">
-          <div class=""> <img
-              src="https://66.media.tumblr.com/3c26e4b066493b035d955c2b36cebcb8/tumblr_mtjqvtka4z1rfjowdo1_500.gif"
-              alt="jake the dog" class="jakethedog image-fluid" onclick="grabSandwich()"></div>
-        </div>
-      </div>
-    </div>
-    <!-- ANCHOR Upgrades  -->
-    <section class="row">
+
+    <!-- ANCHOR Finn  -->
+    <Section class="row">
       <div id="Finn" class="col d-flex">
         <img src="https://24.media.tumblr.com/tumblr_medxffmavV1rrsa2po1_1280.gif" alt="Finn the boi" class="Finnboi"
           onclick="buyComp('Finn')">
@@ -64,8 +32,9 @@
           <h2 class="text-light">Cost:</h2><span id='FinnPrice' class="text-light "></span>
         </div>
       </div>
-    </section>
-    <section class="row">
+
+      <!-- ANCHOR BMO -->
+
       <div id="Bmo" class="col d-flex">
         <img src="https://66.media.tumblr.com/48f60a0f26ac9c2d0abae4e05059780e/tumblr_mfyx66vIWj1rfjowdo1_500.gif"
           alt="Bmo" Class="Bmos" onclick="buyComp('Bmo')">
@@ -74,8 +43,9 @@
           <h2 class="text-light">Cost:</h2><span id='BmoPrice' class="text-light"></span>
         </div>
       </div>
-    </section>
-    <section class="row">
+
+      <!-- ANCHOR Lumps -->
+
       <div id="Lumps" class="col d-flex">
         <img src="https://66.media.tumblr.com/tumblr_mauanlcdMi1rfjowdo1_500.gif" alt="Lumpy Space" class="Lumpyy"
           onclick="buyComp('Lumps')">
@@ -84,8 +54,9 @@
           <h2 class="text-light">Cost:</h2><span id='LumpsPrice' class="text-light"></span>
         </div>
       </div>
-    </section>
-    <section class="row">
+
+      <!-- ANCHOR Gunter -->
+
       <div id="Gunter" class="col d-flex">
         <img src="https://i.pinimg.com/originals/a9/36/c2/a936c2d173cb4af7a620d41222ab856a.gif" alt="Gunter"
           class="Gunterr" onclick="buyComp('Gunter')">
@@ -94,11 +65,25 @@
           <h2 class="text-light">Cost:</h2><span id='GunterPrice' class="text-light"></span>
         </div>
       </div>
-    </section>
+    </Section>
 
-
-
-
+    <!-- ANCHOR jake the dog  -->
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <img src="Burger.png" alt="Burger" class="Burger">
+        <div id='Sandis'>
+          <h1 class="text-light">0</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="Jake">
+        <div class="col-12 d-flex justify-content-center"> <img
+            src="https://66.media.tumblr.com/3c26e4b066493b035d955c2b36cebcb8/tumblr_mtjqvtka4z1rfjowdo1_500.gif"
+            alt="jake the dog" class="jakethedog " onclick="grabSandwich()"></div>
+      </div>
+    </div>
+    </div>
 
 
 
